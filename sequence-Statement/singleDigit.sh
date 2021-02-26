@@ -1,3 +1,3 @@
 #!/bin/bash -x
-singleDigit=$(RANDOM)
-echo $(singleDigit)
+singleDigit=$((RANDOM%10))
+echo $singleDigit	
