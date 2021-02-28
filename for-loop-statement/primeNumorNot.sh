@@ -3,8 +3,6 @@
 echo "Enter the number"
 
 read num
-function prime 
-{
 for((i=2; i<=num/2; i++))
 do
 if [ $((num%i)) -eq 0 ]
@@ -16,8 +14,4 @@ fi
 
 done
 
-echo "$num is prime number "
-}
-
-r=`prime $number`
-echo "$r"
+echo "$num is prime number"
