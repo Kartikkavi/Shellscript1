@@ -27,7 +27,7 @@ echo "maximum= "$Num5
 fi
 if [ $Num1 -lt $Num2 -a $Num1 -lt $Num3 ]
 then
-echo "minimum= "$Num5
+echo "minimum= "$Num1
 elif [ $Num2 -lt $Num1 -a $Num2 -lt $Num3 ]
 then
 echo "minimum= "$Num2
