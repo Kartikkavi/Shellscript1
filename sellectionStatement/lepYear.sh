@@ -1,14 +1,14 @@
+  GNU nano 5.4                                                         lepYear.sh
 #!/bin/bash
-read -p "Enter the year:" year
-if [[ $(($year%4)) -eq 0 ]]
+
+echo "enter year"
+read Y
+year=$Y
+Y=$(($Y%4))
+if [ $Y -eq 0 ]
 then
-	echo "Year is leap year"
-elif [[ $(($year%100)) -eq 0 ]]
-then 
-	echo "Year is not leap year"
-elif [[ $(($year%400)) -eq 0 ]]
-then
-	echo "Year is leap year"
+echo "year is leap year"
+
 else
-	echo "Year is not leap year"
+echo "year is not leap year"
 fi
