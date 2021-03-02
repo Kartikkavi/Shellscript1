@@ -1,4 +1,4 @@
-  GNU nano 5.4                                                         lepYear.sh
+
 #!/bin/bash
 
 echo "enter year"
