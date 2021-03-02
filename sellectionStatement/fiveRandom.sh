@@ -1,42 +1,42 @@
-#! /bin/bash 
+#! /bin/bash
 echo "Five random Numbers"
-Num1=$((100+RANDOM%900))
-Num2=$((100+RANDOM%900))
-Num3=$((100+RANDOM%900))
-Num4=$((100+RANDOM%900))
-Num5=$((100+RANDOM%900))
-echo "Num1="$Num1
-echo "Num2="$Num2
-echo "Num3="$Num3
-echo "Num4="$Num4
-echo "Num5="$Num5
-if [ $Num1 -gt $Num2 -a $Num1 -gt $Num3 ]
+a=$((RANDOM%1000))
+b=$((RANDOM%1000))
+c=$((RANDOM%1000))
+d=$((RANDOM%1000))
+e=$((RANDOM%1000))
+echo "a="$a
+echo "b="$b
+echo "c="$c
+echo "d="$d
+echo "e="$e
+if [ $a -gt $b -a $a -gt $c ]
 then
-echo "maximum= "$Num1
-elif [ $Num2 -gt $Num1 -a $Num2 -gt $Num3 ]
+echo "maximum= "$a
+elif [ $b -gt $a -a $b -gt $c ]
 then
-echo "maximum= "$Num2
-elif [ $Num3 -gt $Num1 -a $Num3 -gt $Num4 ]
+echo "maximum= "$b
+elif [ $c -gt $a -a $c -gt $d ]
 then
-echo "maximum= "$Num3
-elif [ $Num4 -gt $Num3 -a $Num4 -gt $Num5 ]
+echo "maximum= "$c
+elif [ $d -gt $c -a $d -gt $e ]
 then
-echo "maximum= "$Num4
+echo "maximum= "$d
 else
-echo "maximum= "$Num5
+echo "maximum= "$e
 fi
-if [ $Num1 -lt $Num2 -a $Num1 -lt $Num3 ]
+if [ $a -lt $b -a $a -lt $c ]
 then
-echo "minimum= "$Num1
-elif [ $Num2 -lt $Num1 -a $Num2 -lt $Num3 ]
+echo "minimum= "$a
+elif [ $b -lt $a -a $b -lt $c ]
 then
-echo "minimum= "$Num2
-elif [ $Num3 -lt $Num2 -a $Num3 -lt $Num4 ]
+echo "minimum= "$b
+elif [ $c -lt $b -a $c -lt $d ]
 then
-echo "minimum= "$Num3
-elif [ $Num4 -lt $Num3 -a $Num4 -lt $Num5 ]
+echo "minimum= "$c
+elif [ $d -lt $c -a $d -lt $e ]
 then
-echo "minimum= "$Num4
+echo "minimum= "$d
 else
-echo "minimum= "$Num5
+echo "minimum= "$e
 fi
