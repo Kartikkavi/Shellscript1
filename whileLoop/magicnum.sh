@@ -21,7 +21,7 @@ do
 	else
 		read -p "is number is less than $mid yes:" choice
 	fi
-	if [[ "$choice" == "yes" || "$choice" == "y" || "$choice" == "Y" ]]
+	if [[ "$choice" == "yes"]] 
 	then
 		high=$mid
 	else
